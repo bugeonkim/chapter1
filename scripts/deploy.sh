@@ -1,8 +1,12 @@
 #!/bin/bash
 
 REPOSITORY=/home/ec2-user/app/step2
-PROJECT_NAME=freelec-springboot2-webservice
+PROJECT_NAME=chapter1
 
+
+echo "> 기존 jar 파일 삭제"
+
+rm -rf $REPOSITORY/*.jar
 
 echo "> Build 파일 복사"
 
