@@ -28,6 +28,7 @@ do
     echo "> Health check: ${RESPONSE}"
   fi
 
+
   if [ ${RETRY_COUNT} -eq 10 ]
   then
     echo "> Health check 실패"
