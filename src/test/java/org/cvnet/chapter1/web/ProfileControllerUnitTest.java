@@ -75,13 +75,13 @@ public class ProfileControllerUnitTest {
         assertThat(profile).isEqualTo(expectedProfile);
     }
 
-    @Test
-    public void profile은_인증없이_호출된다() throws Exception {
-        String expected = "default";
-
-        ResponseEntity<String> response = restTemplate.getForEntity("/profile", String.class);
-
-        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-        assertThat(response.getBody()).isEqualTo(expected);
-    }
+//    @Test
+//    public void profile은_인증없이_호출된다() throws Exception {
+//        String expected = "default";
+//
+//        ResponseEntity<String> response = restTemplate.getForEntity("/profile", String.class);
+//
+//        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
+//        assertThat(response.getBody()).isEqualTo(expected);
+//    }
 }
